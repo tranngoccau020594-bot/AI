@@ -1,0 +1,67 @@
+{
+  "source": "User-supplied resources.zip containing app.asar and dist",
+  "source_zip_sha256": "1004d0d27e235c7362f428a24076c1690a6772cf241bc25624f8fc9f93a93b8e",
+  "original_application_dist_sha256": "b459139110b42e71c76b80f18f3bae4309263ebdee4c2af79c099e2f4ff2dd33",
+  "files": [
+    {
+      "path": "dist/assets/index-B863TW1T.js",
+      "bytes": 1314801,
+      "sha256": "eebbe5a788cebd7e4e38eb41b38cbab1f5573a609cb6a1f7f868a1cb4b32822a"
+    },
+    {
+      "path": "dist/assets/index-DKk8lR4B.css",
+      "bytes": 236084,
+      "sha256": "ea16b51cd0e7ee0ee9b5e2b0af8314865aa887077cd144641fb6829f5f56131f"
+    },
+    {
+      "path": "dist/assets/inter-latin-Dx4kXJAl.woff2",
+      "bytes": 48256,
+      "sha256": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62"
+    },
+    {
+      "path": "dist/assets/inter-latin-ext-DO1Apj_S.woff2",
+      "bytes": 85068,
+      "sha256": "34b9c504cab7a73e37b746343a449132e56cf7b5481af2cb81dc74dcff25c956"
+    },
+    {
+      "path": "dist/assets/inter-vietnamese-CBcvBZtf.woff2",
+      "bytes": 10252,
+      "sha256": "5c66f9e07e90c6d4ac4922cc68d60de26c17b1858e677fb5e603fce3952b3ff2"
+    },
+    {
+      "path": "dist/assets/logo-B1-uZFTe.png",
+      "bytes": 222992,
+      "sha256": "5e602ba1c820bf9b5aab28b743252e391dd52b313d32c180b4f48c35d9ee65ae"
+    },
+    {
+      "path": "dist/chuoi-en.bin",
+      "bytes": 70554,
+      "sha256": "602ce9888f61cb12146986817fa6e8181f11f724787fc5bb826638679c6b47db"
+    },
+    {
+      "path": "dist/chuoi-mo-en.json",
+      "bytes": 1913,
+      "sha256": "39b131b23b9c24d124b43efd3297dfdac81a47c82e9314de36d80f40d8901c15"
+    },
+    {
+      "path": "dist/chuoi-mo.json",
+      "bytes": 2173,
+      "sha256": "659f660746515cb46fd9e8a231f8806c199f56f86be76785f398be5cfff51f38"
+    },
+    {
+      "path": "dist/chuoi.bin",
+      "bytes": 79572,
+      "sha256": "6ca2ca3a188cb63f959643d3592eb40d8929a298557bb38d6f0343c5d0509947"
+    },
+    {
+      "path": "dist/icon.ico",
+      "bytes": 159287,
+      "sha256": "419bb938ec64e831e743c966e685cdf74e775d34caafaaa4bbbaa309a5255c02"
+    },
+    {
+      "path": "dist/index.html",
+      "bytes": 723,
+      "sha256": "55dea36a2aa781b2f732218fd254b90461317d594862384dfa7b2ceca3d9d509"
+    }
+  ]
+}
