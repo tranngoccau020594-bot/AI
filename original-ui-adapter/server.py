@@ -51,7 +51,9 @@ def create_server(studio, port=8770, bootstrap=True):
                     js = '"use strict";\nconst adapterPublicStrings=' + json.dumps(strings, ensure_ascii=False) + ';\n'
                     js += 'window.__adapterMissingStrings=new Set();\nwindow.__S=function(id){const value=adapterPublicStrings[String(id)];if(typeof value==="string")return value;window.__adapterMissingStrings.add(Number(id));return "";};\n'
                     return self.reply(200, js.encode(), 'text/javascript; charset=utf-8')
-                if path in ('/', '/index.html'):
+                if path in ('/', '/index.html') and bootstrap:
+                    return self.reply(200, Path(__file__).with_name('home.html').read_bytes(), MIME['.html'])
+                if path in ('/', '/index.html', '/original'):
                     if not bootstrap:
                         return self.reply(200, (DIST / 'index.html').read_bytes(), MIME['.html'])
                     # Separate HTML host: original HTML on disk and its bundle remain unmodified.

@@ -25,7 +25,14 @@ async function runProbe(browser, raw) {
     });
     page.on('pageerror', error => errors.push(error.message));
     page.on('response', response => { const url = new URL(response.url()); if (/^\/(api|compat)\//.test(url.pathname)) requests.push({ path: url.pathname, status: response.status() }); });
-    await page.goto(origin);
+    if (!raw) {
+      await page.goto(origin);
+      assert.match(await page.locator('body').innerText(), /Studio gốc chưa được kết nối/);
+      assert.equal(await page.locator('script').count(), 0);
+      assert.equal(requests.length, 0);
+      await page.screenshot({ path: path.join(__dirname, 'home-preview.png'), fullPage: true });
+    }
+    await page.goto(origin + (raw ? '/' : '/original'));
     await page.waitForTimeout(3000);
     const report = { mode: raw ? 'original-html-without-bootstrap' : 'separate-host-with-public-bootstrap', errors, requests, externalBlocked: external,
       bodyText: (await page.locator('body').innerText()).slice(0, 8000),

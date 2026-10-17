@@ -1,3 +1,7 @@
+## Thay đổi trang mở đầu
+
+Mặc định `/` hiện trang trạng thái riêng, không tải JavaScript DTMAX nên không hiện bảng kích hoạt và không tự gọi API nhận diện máy. Màn hình gốc để chẩn đoán vẫn có tại `/original`, giữ nguyên kiểm tra hiện có. Thay đổi này chỉ thuộc trình xem thử; không mở khóa hoặc cung cấp các chức năng studio được bảo vệ.
+
 # Thử nối giao diện gốc — kết quả có giới hạn
 
 **Trạng thái: tải được màn hình kích hoạt gốc; chưa vào được studio. Không phải bản tích hợp hoàn chỉnh.**

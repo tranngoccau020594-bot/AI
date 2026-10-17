@@ -26,8 +26,14 @@ class AdapterTest(unittest.TestCase):
         for name in ['assets/index-B863TW1T.js', 'assets/index-DKk8lR4B.css', 'assets/inter-vietnamese-CBcvBZtf.woff2', 'assets/logo-B1-uZFTe.png']:
             with self.get('/'+name) as response:
                 self.assertEqual(response.read(), (server.DIST/name).read_bytes())
-    def test_new_host_loads_unchanged_original_bundle(self):
+    def test_home_does_not_load_original_license_screen(self):
         with self.get('/') as response:
+            html = response.read().decode()
+            self.assertIn('Studio gốc chưa được kết nối', html)
+            self.assertNotIn('<script', html)
+            self.assertNotIn('index-B863TW1T.js', html)
+    def test_new_host_loads_unchanged_original_bundle(self):
+        with self.get('/original') as response:
             html = response.read().decode()
             self.assertIn('/adapter/bootstrap.js', html)
             self.assertIn('/assets/index-B863TW1T.js', html)
