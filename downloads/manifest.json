@@ -1,0 +1,22 @@
+{
+  "output": "Seedance-AI-1.0.160-windows-x64.exe",
+  "sha256": "c25d582f1fa3c8c03d194681691fd87f90c25e2f3afc984974e26005539c7d92",
+  "bytes": 117949772,
+  "parts": [
+    {
+      "file": "Seedance-AI.part01",
+      "bytes": 47185920,
+      "sha256": "55aa14f2c3e7c7c98e00333c781fa942a9a5c62daec697d085b6750c0ab2d36b"
+    },
+    {
+      "file": "Seedance-AI.part02",
+      "bytes": 47185920,
+      "sha256": "4a8a44e4072546717354f3eee113c01d44706d1ada09e061d8c4ae9201acf3d3"
+    },
+    {
+      "file": "Seedance-AI.part03",
+      "bytes": 23577932,
+      "sha256": "3f7e7329b166a726c30f444542fba91c642417c5bbecb783be17ea49e70feab5"
+    }
+  ]
+}
