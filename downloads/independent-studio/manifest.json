@@ -1,0 +1,27 @@
+{
+  "output": "Independent-Studio-0.2.0-windows-x64.zip",
+  "bytes": 169393525,
+  "sha256": "020762c658f96c2ba93ff6d5a58677ff4981a74c9c835ada5f8612c6bc75c35a",
+  "parts": [
+    {
+      "file": "Independent-Studio.zip.part01",
+      "bytes": 47185920,
+      "sha256": "62fc9b26c5f6c223963eb74784994136e430d6caa8c02967b1aad921e42aa2aa"
+    },
+    {
+      "file": "Independent-Studio.zip.part02",
+      "bytes": 47185920,
+      "sha256": "78a62fc177e565e1caab03daf67d9a1c9b6fec9c06501a1c223b2345f90e6a71"
+    },
+    {
+      "file": "Independent-Studio.zip.part03",
+      "bytes": 47185920,
+      "sha256": "d82078c3563d02beb917e09cae32fe403e5311a0c05728e13ee27acee48977a9"
+    },
+    {
+      "file": "Independent-Studio.zip.part04",
+      "bytes": 27835765,
+      "sha256": "29c836b1faa5079a2e181454fc0e9e64707ef8c15607404191d4aa72a35151ab"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "independent-studio",
+  "version": "0.2.0",
+  "description": "Independent Windows studio with a new local Python backend",
+  "main": "main.cjs",
+  "private": true
+}

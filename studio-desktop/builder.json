@@ -1,0 +1,57 @@
+{
+  "appId": "local.independent.studio",
+  "productName": "Independent Studio",
+  "electronVersion": "44.9.0",
+  "directories": {
+    "app": "studio-desktop",
+    "output": "release-independent"
+  },
+  "asar": true,
+  "npmRebuild": false,
+  "files": [
+    "package.json",
+    "main.cjs"
+  ],
+  "extraResources": [
+    {
+      "from": "studio-backend",
+      "to": "studio-backend",
+      "filter": [
+        "server.py",
+        "bridge.js"
+      ]
+    },
+    {
+      "from": "web-demo",
+      "to": "web-demo",
+      "filter": [
+        "index.html"
+      ]
+    },
+    {
+      "from": "recovered/python-embed",
+      "to": "python-embed",
+      "filter": [
+        "python.exe",
+        "python3.dll",
+        "python312.dll",
+        "python312.zip",
+        "*.pyd",
+        "*.dll",
+        "LICENSE.txt",
+        "!Lib/**/*"
+      ]
+    },
+    {
+      "from": "studio-desktop/runtime/python312._pth",
+      "to": "python-embed/python312._pth"
+    }
+  ],
+  "win": {
+    "target": [
+      "zip"
+    ],
+    "signAndEditExecutable": false,
+    "artifactName": "Independent-Studio-${version}-windows-${arch}.${ext}"
+  }
+}

@@ -1,0 +1,14 @@
+recovered/
+node_modules/
+__pycache__/
+*.pyc
+release/
+.cache/
+license-keys/
+*.private.pem
+
+release-independent/
+studio-data/
+*.sqlite3
+*.sqlite3-journal
+.instance.lock

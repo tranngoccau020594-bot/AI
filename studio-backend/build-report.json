@@ -1,0 +1,12 @@
+{
+  "windows_build": "passed",
+  "packaged_sources": "matched",
+  "old_dtmax_backend": "absent",
+  "third_party_site_packages": "absent",
+  "zip_crc": "passed",
+  "windows_runtime": "not tested",
+  "real_openai_generation": "not tested; API key not supplied",
+  "sha256": "020762c658f96c2ba93ff6d5a58677ff4981a74c9c835ada5f8612c6bc75c35a",
+  "bytes": 169393525,
+  "openai_key_launcher": "included; Windows execution untested"
+}

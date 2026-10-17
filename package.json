@@ -1,0 +1,19 @@
+{
+  "name": "dtmax-reconstruction-workspace",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "verify": "python tools/recover.py --verify recovered",
+    "start": "node tools/start.cjs",
+    "build:win": "npm run verify && electron-builder --config electron-builder.json --win --x64",
+    "build:win:dir": "npm run verify && electron-builder --config electron-builder.json --win --x64 --dir",
+    "verify:package": "node tools/verify-package.cjs",
+    "start:new-backend": "python studio-backend/server.py",
+    "test:new-backend": "python -m unittest discover -s studio-backend -p \"test_*.py\" -v",
+    "build:new-win": "python studio-desktop/package_windows.py"
+  },
+  "devDependencies": {
+    "electron": "44.9.0",
+    "electron-builder": "26.15.3"
+  }
+}
