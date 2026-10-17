@@ -12,3 +12,5 @@ studio-data/
 *.sqlite3
 *.sqlite3-journal
 .instance.lock
+
+original-probe-data/
